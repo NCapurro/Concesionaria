@@ -8,8 +8,8 @@ const props = defineProps({
   motos: { type: Array, default: () => [] },
   sucursales: {
     type: Array, default: () => [
-      { nombre: 'Paraná', direccion: 'Cura Alvarez y Echague', telefono: '+54 9 343 453-1520', whatsapp: '5493434531520', instagram: 'ncsoftware_dev', lat: -31.7396522, lng: -60.5203775 },
-      { nombre: 'Santa Fe', direccion: 'Mendoza 740', telefono: '+54 9 3434 531520', whatsapp: '5493434531520', instagram: 'ncsoftware_dev', lat: -31.646500596262143, lng: -60.71655290567032 }, 
+      { nombre: 'Paraná', direccion: 'Cura Alvarez y Echague', telefono: '+54 9 343 453-1522', whatsapp: '5493434531522', instagram: 'ncsoftware_dev', lat: -31.7396522, lng: -60.5203775 },
+      { nombre: 'Santa Fe', direccion: 'Mendoza 740', telefono: '+54 9 3434 531522', whatsapp: '5493434531522', instagram: 'ncsoftware_dev', lat: -31.646500596262143, lng: -60.71655290567032 }, 
     ]
   }
 });
@@ -121,7 +121,7 @@ const motoDestacada = computed(() => motos.value.length > 0 ? motos.value[0] : n
 
       <div class="hidden md:flex items-center gap-3">
         <Link href="/login" class="text-sm text-zinc-400 hover:text-white transition-colors">Admin</Link>
-        <a href="https://wa.me/5493434531520" target="_blank"
+        <a href="https://wa.me/5493434531522" target="_blank"
           class="flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all active:scale-95">
           WhatsApp
         </a>
@@ -390,7 +390,7 @@ const motoDestacada = computed(() => motos.value.length > 0 ? motos.value[0] : n
                 <p class="text-xs text-zinc-500 mt-2">* Valor estimado, sujeto a aprobación crediticia</p>
               </div>
 
-              <a href="https://wa.me/5493434531520?text=Hola!%20Quiero%20consultar%20por%20financiación"
+              <a href="https://wa.me/5493434531522?text=Hola!%20Quiero%20consultar%20por%20financiación"
                 target="_blank"
                 class="w-full flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold py-4 rounded-2xl transition-all text-sm active:scale-95">
                 Consultar financiación por WhatsApp

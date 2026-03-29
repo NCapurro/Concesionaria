@@ -17,8 +17,8 @@ class HomeController extends Controller
                 'nombre' => $sucursal->nombre,
                 'direccion' => $sucursal->direccion,
                 // Datos hardcodeados por ahora para la demo comercial
-                'telefono' => '+54 9 343 4531520',
-                'whatsapp' => '5493434531520',
+                'telefono' => '+54 9 343 4531522',
+                'whatsapp' => '5493434531522',
                 'instagram' => 'ncsoftware_dev',
                 'lat' => $sucursal->nombre === 'Paraná' ? -31.7396522 : -31.646500596262143,
                 'lng' => $sucursal->nombre === 'Paraná' ? -60.5203775 : -60.71655290567032,
