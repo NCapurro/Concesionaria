@@ -23,8 +23,8 @@ services:
       MYSQL_USER: ${DB_USERNAME:-user}
     volumes:
       - db-data:/var/lib/mysql
-    ports:
-      - "3306:3306"
+    # ports:
+    #  - "3306:3306"
 
 volumes:
   db-data:
