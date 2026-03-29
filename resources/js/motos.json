@@ -1,0 +1,60 @@
+[
+  {
+    "id_ejemplar": 101,
+    "precio": 6500000,
+    "km": 0,
+    "anio_fabricacion": 2024,
+    "dominio": null,
+    "estado_venta": "Disponible",
+    "color": "Rojo",
+    "sucursal": "Venado Tuerto",
+    "moto": {
+      "marca": "Honda",
+      "modelo": "Tornado",
+      "categoria": "Enduro",
+      "cilindrada": "250cc"
+    },
+    "imagenes": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3c87?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1597157639073-69284dc0f6ea?q=80&w=800&auto=format&fit=crop"
+    ]
+  },
+  {
+    "id_ejemplar": 102,
+    "precio": 2100000,
+    "km": 14500,
+    "anio_fabricacion": 2021,
+    "dominio": "A123BCD",
+    "estado_venta": "Disponible",
+    "color": "Negro",
+    "sucursal": "Paraná",
+    "moto": {
+      "marca": "Yamaha",
+      "modelo": "YBR",
+      "categoria": "Street",
+      "cilindrada": "125cc"
+    },
+    "imagenes": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ]
+  },
+  {
+    "id_ejemplar": 103,
+    "precio": 11500000,
+    "km": 0,
+    "anio_fabricacion": 2024,
+    "dominio": null,
+    "estado_venta": "Reservado",
+    "color": "Verde",
+    "sucursal": "Paraná",
+    "moto": {
+      "marca": "Kawasaki",
+      "modelo": "Ninja 400",
+      "categoria": "Pista",
+      "cilindrada": "400cc"
+    },
+    "imagenes": [
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=800&auto=format&fit=crop"
+    ]
+  }
+]
