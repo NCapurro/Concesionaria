@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LeadController;
+use App\Http\Controllers\AdminMotoController;
 
 
 Route::get('/dashboard', function () {
@@ -17,6 +18,17 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
+    // La vista que armaste recién
+    Route::get('/motos', [AdminMotoController::class, 'index'])->name('motos.index');
+    
+    // Las acciones del formulario
+    Route::post('/motos', [AdminMotoController::class, 'store'])->name('motos.store');
+    Route::put('/motos/{id}', [AdminMotoController::class, 'update'])->name('motos.update');
+    Route::delete('/motos/{id}', [AdminMotoController::class, 'destroy'])->name('motos.destroy');
+});
+
 // Ruta principal que alimenta el landing page
 Route::get('/', [HomeController::class, 'index'])->name('home');
 

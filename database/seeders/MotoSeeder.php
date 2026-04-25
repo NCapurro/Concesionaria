@@ -73,6 +73,7 @@ class MotoSeeder extends Seeder
             ['marca_id' => 1, 'categoria_id' => 1, 'cilindrada_id' => 4, 'modelo' => 'CB 300F Twister', 'created_at' => $now, 'updated_at' => $now], // Honda
         ]);
 
+
         // 5. Ejemplares (El stock físico)
         // 5.1 -> 5 Motos 0KM (Sin dueño, sin dominio, 0km, año actual)
         DB::table('ejemplars')->insert([
@@ -91,6 +92,25 @@ class MotoSeeder extends Seeder
             ['moto_id' => 4, 'sucursal_id' => 1, 'color_id' => 2, 'dueno_id' => 4, 'anio_fabricacion' => 2020, 'km' => 12000, 'precio' => 750000, 'dominio' => 'A100LKM', 'estado_venta' => 'Disponible', 'created_at' => $now, 'updated_at' => $now],
             ['moto_id' => 5, 'sucursal_id' => 2, 'color_id' => 1, 'dueno_id' => 5, 'anio_fabricacion' => 2023, 'km' => 3200, 'precio' => 4900000, 'dominio' => 'A188POP', 'estado_venta' => 'Disponible', 'created_at' => $now, 'updated_at' => $now],
         ]);
+
+        
+        $now = now();
+
+for ($i = 6; $i <= 25; $i++) {
+    DB::table('ejemplars')->insert([
+        'moto_id' => rand(1, 5), // moto_id incremental
+        'sucursal_id' => ($i % 2) + 1, // alterna entre sucursal 1 y 2
+        'color_id' => ($i % 5) + 1, // rota entre 1 y 5
+        'dueno_id' => null,
+        'anio_fabricacion' => 2024,
+        'km' => rand(0, 500), // algunos con km iniciales
+        'precio' => rand(1000000, 15000000), // rango de precios
+        'dominio' => null,
+        'estado_venta' => ($i % 3 == 0) ? 'Reservado' : 'Disponible', // alterna estados
+        'created_at' => $now,
+        'updated_at' => $now,
+    ]);
+}
 
 
 

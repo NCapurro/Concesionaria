@@ -144,7 +144,7 @@ const motoDestacada = computed(() => motos.value.length > 0 ? motos.value[0] : n
     </div>
   </nav>
 
-  <div class="bg-zinc-950 text-white" style="font-family: 'Montserrat', sans-serif;">
+  <div class="bg-zinc-950 text-white overflow-x-hidden" style="font-family: 'Montserrat', sans-serif;">
 
     <section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
       <div class="absolute inset-0">
@@ -184,7 +184,7 @@ const motoDestacada = computed(() => motos.value.length > 0 ? motos.value[0] : n
             </button>
           </div>
 
-          <div class="mt-14 flex gap-10 border-t border-zinc-800 pt-8">
+          <div class="mt-14 flex flex-wrap gap-6 md:gap-10 border-t border-zinc-800 pt-8 justify-between sm:justify-start">
             <div>
               <p class="text-3xl font-black text-white">{{ motos.filter(m => m.km === 0).length }}+</p>
               <p class="text-xs text-zinc-500 uppercase tracking-widest mt-1">Motos 0km</p>

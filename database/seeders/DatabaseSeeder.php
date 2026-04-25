@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
+            'password' => bcrypt('password'), // Cambia esto por una contraseña segura
         ]);
     
         $this->call(MotoSeeder::class);
