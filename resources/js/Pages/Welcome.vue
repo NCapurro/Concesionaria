@@ -231,7 +231,7 @@ const motoDestacada = computed(() => motos.value.length > 0 ? motos.value[0] : n
       </div>
 
       <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-zinc-600">
-        <span class="text-xs uppercase tracking-widest">Scroll</span>
+        
         <div class="w-px h-8 bg-gradient-to-b from-zinc-600 to-transparent animate-pulse"></div>
       </div>
     </section>
